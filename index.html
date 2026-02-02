@@ -40,22 +40,22 @@
     nav {
       position: fixed;
       width: 100%;
-      background: #111827;
-      padding: 12px 0;
+      background: #0f172a;
+      padding: 14px 0;
       text-align: center;
       z-index: 1000;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 18px;
       font-size: 14px;
     }
 
     /* ===== HERO ===== */
     #header {
       height: 100vh;
-      background: #111827;
+      background: #0f172a;
       color: white;
       display: flex;
       justify-content: center;
@@ -66,8 +66,13 @@
     }
 
     #header h1 {
-      font-size: 48px;
+      font-size: 50px;
       margin-bottom: 10px;
+    }
+
+    #header p {
+      font-size: 20px;
+      opacity: 0.9;
     }
 
     .btn {
@@ -76,16 +81,16 @@
       padding: 12px 22px;
       border-radius: 6px;
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
     }
 
-    /* ===== PROJECTS ===== */
+    /* ===== PROJECT CARDS ===== */
     .project {
-      margin-bottom: 70px;
       background: #f9fafb;
       padding: 25px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      margin-bottom: 60px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
     .project img {
@@ -110,7 +115,7 @@
 
     /* ===== FOOTER ===== */
     footer {
-      background: #111827;
+      background: #0f172a;
       color: white;
       text-align: center;
       padding: 25px;
@@ -120,7 +125,7 @@
 
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVIGATION -->
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -131,7 +136,7 @@
   <!-- HERO -->
   <div id="header">
     <h1>Pradeep Sankar</h1>
-    <p>Data Analyst | Python • SQL • Power BI</p>
+    <p>Data Analyst | Python • SQL • Power BI • Excel</p>
     <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
   </div>
 
@@ -139,9 +144,10 @@
   <section id="about">
     <h2>About Me</h2>
     <p style="text-align:center;">
-      Data Analyst passionate about transforming raw data into actionable insights.
-      Experienced in SQL, Python (Pandas), and Power BI to build dashboards, automate reports,
-      and support data-driven business decisions.
+      Entry-level Data Analyst with hands-on experience in Python (Pandas), SQL, and Power BI.
+      I specialize in cleaning raw datasets, performing exploratory analysis, and building
+      interactive dashboards that transform business data into actionable insights.
+      Passionate about solving real-world problems using data-driven decision making.
     </p>
   </section>
 
@@ -152,8 +158,8 @@
     <div class="project">
       <h3>Car Sales Analysis Dashboard</h3>
       <p>
-        Designed interactive KPIs to analyze revenue, trends, and top-performing models.
-        Enabled stakeholders to make faster business decisions.
+        Analyzed sales performance to identify revenue trends, top models, and regional growth.
+        Built interactive dashboards with KPIs and filters for business users.
         <br><b>Tools:</b> SQL, Power BI, Excel
       </p>
       <img src="images/car.png">
@@ -162,8 +168,8 @@
     <div class="project">
       <h3>Inventory & Customer Behaviour Analysis</h3>
       <p>
-        Cleaned and processed raw data using Python and SQL. Built dashboards to monitor stock levels,
-        customer segments, and profitability trends.
+        Cleaned and processed raw data using Python and SQL. Developed dashboards to optimize stock levels,
+        track customer segmentation, and improve profitability insights.
         <br><b>Tools:</b> Python (Pandas), SQL, Power BI
       </p>
       <img src="images/customer.png">
@@ -181,8 +187,9 @@
       <span>Power BI</span>
       <span>Excel</span>
       <span>Data Cleaning</span>
-      <span>Dashboarding</span>
+      <span>Visualization</span>
       <span>Reporting</span>
+      <span>Dashboarding</span>
     </div>
   </section>
 
@@ -192,7 +199,8 @@
       LinkedIn:
       <a href="https://www.linkedin.com/in/pradeep-sankar-m/">Profile</a> |
       GitHub:
-      <a href="https://github.com/mpradeepsankar">GitHub</a>
+      <a href="https://github.com/mpradeepsankar">GitHub</a> |
+      Email: mpradeepsankar@gmail.com
     </p>
   </footer>
 
