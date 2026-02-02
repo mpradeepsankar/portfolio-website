@@ -28,6 +28,20 @@
       max-width: 1000px;
       margin: auto;
       padding: 80px 20px;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 1s ease forwards;
+    }
+
+    section:nth-child(2) { animation-delay: 0.2s; }
+    section:nth-child(3) { animation-delay: 0.4s; }
+    section:nth-child(4) { animation-delay: 0.6s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     h2 {
@@ -50,6 +64,11 @@
       color: white;
       margin: 0 18px;
       font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
     }
 
     /* ===== HERO ===== */
@@ -66,8 +85,9 @@
     }
 
     #header h1 {
-      font-size: 50px;
+      font-size: 52px;
       margin-bottom: 10px;
+      animation: fadeUp 1s ease;
     }
 
     #header p {
@@ -82,6 +102,12 @@
       border-radius: 6px;
       display: inline-block;
       margin-top: 25px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
     }
 
     /* ===== PROJECT CARDS ===== */
@@ -91,6 +117,12 @@
       border-radius: 10px;
       margin-bottom: 60px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
 
     .project img {
@@ -111,6 +143,12 @@
       padding: 8px 14px;
       border-radius: 20px;
       font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .skills span:hover {
+      background: #2563eb;
+      color: white;
     }
 
     /* ===== FOOTER ===== */
@@ -125,7 +163,7 @@
 
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAVBAR -->
   <nav>
     <a href="#about">About</a>
     <a href="#projects">Projects</a>
@@ -144,10 +182,9 @@
   <section id="about">
     <h2>About Me</h2>
     <p style="text-align:center;">
-      Entry-level Data Analyst with hands-on experience in Python (Pandas), SQL, and Power BI.
-      I specialize in cleaning raw datasets, performing exploratory analysis, and building
-      interactive dashboards that transform business data into actionable insights.
-      Passionate about solving real-world problems using data-driven decision making.
+      Entry-level Data Analyst with hands-on experience in SQL, Python (Pandas), and Power BI.
+      Skilled in data cleaning, analysis, and building dashboards that help businesses make
+      data-driven decisions.
     </p>
   </section>
 
@@ -158,8 +195,8 @@
     <div class="project">
       <h3>Car Sales Analysis Dashboard</h3>
       <p>
-        Analyzed sales performance to identify revenue trends, top models, and regional growth.
-        Built interactive dashboards with KPIs and filters for business users.
+        Built interactive dashboards to analyze revenue trends, regional performance,
+        and top-selling models.
         <br><b>Tools:</b> SQL, Power BI, Excel
       </p>
       <img src="images/car.png">
@@ -168,8 +205,8 @@
     <div class="project">
       <h3>Inventory & Customer Behaviour Analysis</h3>
       <p>
-        Cleaned and processed raw data using Python and SQL. Developed dashboards to optimize stock levels,
-        track customer segmentation, and improve profitability insights.
+        Cleaned and analyzed raw datasets using Python & SQL and created dashboards
+        to optimize inventory and track customer behavior.
         <br><b>Tools:</b> Python (Pandas), SQL, Power BI
       </p>
       <img src="images/customer.png">
@@ -189,18 +226,16 @@
       <span>Data Cleaning</span>
       <span>Visualization</span>
       <span>Reporting</span>
-      <span>Dashboarding</span>
     </div>
   </section>
 
   <!-- CONTACT -->
   <footer id="contact">
     <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/pradeep-sankar-m/">Profile</a> |
-      GitHub:
-      <a href="https://github.com/mpradeepsankar">GitHub</a> |
-      Email: mpradeepsankar@gmail.com
+      📞 8270242265 |
+      ✉️ mpradeepsankar@gmail.com <br><br>
+      LinkedIn: <a href="https://www.linkedin.com/in/pradeep-sankar-m/">Profile</a> |
+      GitHub: <a href="https://github.com/mpradeepsankar">GitHub</a>
     </p>
   </footer>
 
