@@ -1,129 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pradeep Sankar | Data Analyst</title>
+  <title>Pradeep Sankar | Data Analyst Portfolio</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      background: #f3f4f6;
-      color: #222;
+      background: #ffffff;
+      color: #1f2937;
+      line-height: 1.6;
     }
 
+    /* ===== HEADER ===== */
     header {
-      background: #111827;
+      background: #0f172a;
       color: white;
-      padding: 80px 20px;
       text-align: center;
+      padding: 90px 20px;
     }
 
     header h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
     }
 
     .btn {
       display: inline-block;
+      margin-top: 20px;
+      padding: 10px 22px;
       background: #2563eb;
       color: white;
-      padding: 10px 20px;
-      margin-top: 15px;
-      border-radius: 6px;
       text-decoration: none;
+      border-radius: 6px;
+      font-weight: 500;
     }
 
+    /* ===== SECTIONS ===== */
     section {
-      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 60px 20px;
     }
 
     h2 {
-      margin-bottom: 20px;
       text-align: center;
+      margin-bottom: 30px;
+      font-size: 28px;
     }
 
+    /* ===== PROJECT CARDS ===== */
     .card {
-      background: white;
-      padding: 20px;
-      margin: 25px 0;
+      background: #f9fafb;
+      padding: 25px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: center;
+      margin-bottom: 40px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
     }
 
     img {
       width: 100%;
-      max-width: 700px;
+      margin-top: 15px;
       border-radius: 8px;
-      margin-top: 10px;
     }
 
+    /* ===== SKILLS ===== */
     .skills {
       text-align: center;
-      line-height: 2;
+      font-size: 16px;
     }
 
+    .skills span {
+      background: #e5e7eb;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 6px;
+      display: inline-block;
+    }
+
+    /* ===== FOOTER ===== */
     footer {
-      background: #111827;
+      background: #0f172a;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
+      font-size: 14px;
     }
 
     a {
       color: #60a5fa;
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <header>
-  <h1>Hi, I'm Pradeep Sankar 👋</h1>
-  <p>Data Analyst | Python | SQL | Power BI</p>
+  <h1>Pradeep Sankar</h1>
+  <p>Data Analyst | Python • SQL • Power BI • Excel</p>
   <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
 </header>
 
+<!-- ABOUT -->
 <section>
   <h2>About Me</h2>
   <p style="text-align:center;">
-    Data Analyst passionate about turning raw data into insights. 
-    Skilled in Python, SQL, Power BI and dashboarding to support business decisions.
+    Data Analyst with strong experience in SQL, Python (Pandas), and Power BI.
+    I specialize in transforming raw business data into dashboards and insights
+    that support decision-making, performance tracking, and strategic growth.
   </p>
 </section>
 
+<!-- PROJECTS -->
 <section>
   <h2>Projects</h2>
 
   <div class="card">
-    <h3>Car Sales Dashboard</h3>
-    <p>Sales trends, KPIs, revenue insights using Power BI & SQL.</p>
+    <h3>Car Sales Analysis Dashboard</h3>
+    <p>
+      Built an interactive Power BI dashboard to analyze revenue, sales trends,
+      top-performing models, and regional performance. Enabled business users
+      to track KPIs and make data-driven decisions.
+      <br><b>Tools:</b> SQL, Power BI, Excel
+    </p>
     <img src="images/car.png">
   </div>
 
   <div class="card">
-    <h3>Inventory & Customer Analysis</h3>
-    <p>Customer behaviour and inventory optimization using Python & Power BI.</p>
+    <h3>Inventory & Customer Behaviour Analysis</h3>
+    <p>
+      Cleaned and processed raw inventory data using Python and SQL.
+      Created dashboards to optimize stock levels, monitor profits,
+      and understand customer purchase behaviour.
+      <br><b>Tools:</b> Python (Pandas), SQL, Power BI
+    </p>
     <img src="images/customer.png">
   </div>
+
 </section>
 
+<!-- SKILLS -->
 <section>
   <h2>Skills</h2>
   <div class="skills">
-    Python • Pandas • SQL • Power BI • Excel • Data Cleaning • Visualization • Reporting
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>SQL</span>
+    <span>Power BI</span>
+    <span>Excel</span>
+    <span>Data Cleaning</span>
+    <span>Dashboarding</span>
+    <span>Reporting</span>
   </div>
 </section>
 
+<!-- CONTACT -->
 <footer>
-  <p>
-    <a href="https://www.linkedin.com/">LinkedIn</a> |
-    <a href="https://github.com/mpradeepsankar">GitHub</a>
-  </p>
+  LinkedIn: <a href="https://www.linkedin.com/in/pradeep-sankar-m/">Profile</a> |
+  GitHub: <a href="https://github.com/mpradeepsankar">GitHub</a>
 </footer>
 
 </body>
 </html>
-
