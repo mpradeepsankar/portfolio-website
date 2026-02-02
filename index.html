@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Pradeep Sankar | Data Analyst Portfolio</title>
+  <title>Pradeep Sankar | Data Analyst</title>
 
   <style>
     /* ===== GLOBAL ===== */
@@ -13,15 +13,8 @@
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
-      background: #ffffff;
       color: #1f2937;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: #2563eb;
-      font-weight: 500;
+      background: #ffffff;
     }
 
     section {
@@ -29,13 +22,9 @@
       margin: auto;
       padding: 80px 20px;
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(30px);
       animation: fadeUp 1s ease forwards;
     }
-
-    section:nth-child(2) { animation-delay: 0.2s; }
-    section:nth-child(3) { animation-delay: 0.4s; }
-    section:nth-child(4) { animation-delay: 0.6s; }
 
     @keyframes fadeUp {
       to {
@@ -47,7 +36,11 @@
     h2 {
       text-align: center;
       margin-bottom: 40px;
-      font-size: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2563eb;
     }
 
     /* ===== NAVBAR ===== */
@@ -55,7 +48,7 @@
       position: fixed;
       width: 100%;
       background: #0f172a;
-      padding: 14px 0;
+      padding: 14px;
       text-align: center;
       z-index: 1000;
     }
@@ -64,7 +57,6 @@
       color: white;
       margin: 0 18px;
       font-size: 14px;
-      transition: 0.3s;
     }
 
     nav a:hover {
@@ -79,20 +71,15 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      text-align: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      text-align: left;
       padding-top: 60px;
     }
 
     #header h1 {
-      font-size: 52px;
+      font-size: 48px;
       margin-bottom: 10px;
-      animation: fadeUp 1s ease;
-    }
-
-    #header p {
-      font-size: 20px;
-      opacity: 0.9;
     }
 
     .btn {
@@ -101,13 +88,21 @@
       padding: 12px 22px;
       border-radius: 6px;
       display: inline-block;
-      margin-top: 25px;
+      margin-top: 20px;
       transition: 0.3s;
     }
 
     .btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
+
+    /* ===== PROFILE PHOTO ===== */
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
     }
 
     /* ===== PROJECT CARDS ===== */
@@ -115,14 +110,13 @@
       background: #f9fafb;
       padding: 25px;
       border-radius: 10px;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
       transition: 0.3s;
     }
 
     .project:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
     }
 
     .project img {
@@ -137,18 +131,11 @@
     }
 
     .skills span {
-      display: inline-block;
       background: #e5e7eb;
-      margin: 6px;
       padding: 8px 14px;
       border-radius: 20px;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .skills span:hover {
-      background: #2563eb;
-      color: white;
+      margin: 6px;
+      display: inline-block;
     }
 
     /* ===== FOOTER ===== */
@@ -173,18 +160,22 @@
 
   <!-- HERO -->
   <div id="header">
-    <h1>Pradeep Sankar</h1>
-    <p>Data Analyst | Python • SQL • Power BI • Excel</p>
-    <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+    <div>
+      <h1>Pradeep Sankar</h1>
+      <p>Data Analyst | Python • SQL • Power BI • Excel</p>
+      <a class="btn" href="resume.pdf" target="_blank">Download Resume</a>
+    </div>
+
+    <img src="images/profile.jpg" class="profile-img">
   </div>
 
   <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
     <p style="text-align:center;">
-      Entry-level Data Analyst with hands-on experience in SQL, Python (Pandas), and Power BI.
-      Skilled in data cleaning, analysis, and building dashboards that help businesses make
-      data-driven decisions.
+      Entry-level Data Analyst skilled in SQL, Python (Pandas), and Power BI.
+      Experienced in cleaning datasets, performing analysis, and building dashboards
+      that provide business insights and support decision-making.
     </p>
   </section>
 
@@ -194,24 +185,15 @@
 
     <div class="project">
       <h3>Car Sales Analysis Dashboard</h3>
-      <p>
-        Built interactive dashboards to analyze revenue trends, regional performance,
-        and top-selling models.
-        <br><b>Tools:</b> SQL, Power BI, Excel
-      </p>
+      <p>Revenue trends, KPIs, and regional insights using SQL & Power BI.</p>
       <img src="images/car.png">
     </div>
 
     <div class="project">
-      <h3>Inventory & Customer Behaviour Analysis</h3>
-      <p>
-        Cleaned and analyzed raw datasets using Python & SQL and created dashboards
-        to optimize inventory and track customer behavior.
-        <br><b>Tools:</b> Python (Pandas), SQL, Power BI
-      </p>
+      <h3>Inventory & Customer Behaviour Dashboard</h3>
+      <p>Stock optimization and customer analysis using Python, SQL & Power BI.</p>
       <img src="images/customer.png">
     </div>
-
   </section>
 
   <!-- SKILLS -->
@@ -225,7 +207,6 @@
       <span>Excel</span>
       <span>Data Cleaning</span>
       <span>Visualization</span>
-      <span>Reporting</span>
     </div>
   </section>
 
